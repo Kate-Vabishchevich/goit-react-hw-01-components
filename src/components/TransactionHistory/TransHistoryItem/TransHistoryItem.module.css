@@ -1,0 +1,3 @@
+.transString:nth-child(2n) {
+background-color: rgb(196, 196, 234);
+}

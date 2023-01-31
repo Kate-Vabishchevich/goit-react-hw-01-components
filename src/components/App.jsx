@@ -10,13 +10,13 @@ import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 export const App = () => {
   return (
     <div
-      // style={{
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101'
-      // }}
+      style={{
+        // display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        // fontSize: 24,
+        color: '#010101'
+      }}
     >
       <Profile
   username={user.username}

@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ items }) => {
     return (
-        <table classNsme={css.transactionHistory}>
-            <thead>
+        <table className={css.transHistory}>
+            <thead className={css.transHead}>
                 <tr>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                    <th className={css.transHead}>Type</th>
+                    <th className={css.transHead}>Amount</th>
+                    <th className={css.transHead}>Currency</th>
                 </tr>
             </thead>
             {items.map(({ type, amount, currency, id }) => {
@@ -27,8 +27,12 @@ export const TransactionHistory = ({ items }) => {
 };
 
 TransactionHistory.propTypes = {
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
