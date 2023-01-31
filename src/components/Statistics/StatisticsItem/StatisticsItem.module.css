@@ -1,0 +1,14 @@
+.item {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    width: calc(100% / 5);
+
+    text-transform: uppercase;
+}
+
+.label,
+.percentage {
+    display: block;
+}
