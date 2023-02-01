@@ -1,5 +1,5 @@
 import css from './StatisticsItem.module.css';
-import { setRandomColor } from 'components/utils/setRandomColor';
+import { setRandomColor } from 'utils/setRandomColor';
 import PropTypes from 'prop-types';
 
 export const StatisticItem = ({ label, percentage }) => {
